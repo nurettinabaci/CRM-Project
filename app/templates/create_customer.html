@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="col-4 offset-4 mb-5 mt-5">
+        <h3>Create a customer</h3>
+        <form method="POST" action="">  {% csrf_token %}
+
+            {{ form }}
+            <input type="submit" name="Update Task">
+
+
+        </form>
+    </div>
+
+
+{% endblock content %}

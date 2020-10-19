@@ -1,0 +1,1 @@
+Create 1000 customer instances: 0:00:00.729609

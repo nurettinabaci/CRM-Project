@@ -16,6 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from customer.views import register, loginPage, logoutUser, index, \
+    create_customer, update_customer, delete_customer
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', index, name="index"),
+    path('login/', loginPage, name="login"),
+    path('register/', register, name="register"),
+    path('logout/', logoutUser, name="logout"),
+    path('create_customer/', create_customer, name="create_customer"),
+    path('update_customer/<str:pk>/', update_customer, name="update_customer"),
+    path('delete_customer/<str:pk>/', delete_customer, name="delete_customer"),
 ]
