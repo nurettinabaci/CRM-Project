@@ -9,6 +9,7 @@ The project is a very simple customer relationship manager.
 #### Speed test result
 1000 Customer instances creation 
 [test result](https://github.com/nurettinabaci/CCRM-Project/tree/master/app/customer_create_speedtest.txt):
+0.729 seconds
 
 ### Installation and Usage
 
